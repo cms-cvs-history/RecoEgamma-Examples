@@ -1,16 +1,17 @@
 #
 #  Author: N. Marinelli, U. of Notre Dame, US
-#  $Id: simplePhotonAnalyzer.cfi,v 1.4 2006/11/28 17:27:32 nancy Exp $ 
+#  $Id: simplePhotonAnalyzer.cfi,v 1.1 2007/03/22 16:12:47 futyand Exp $ 
 #
 
 module simplePhotonAnalyzer = SimplePhotonAnalyzer {
 
-  string outputFile = "/tmp/nancy/photonAnalyzer.root"
+  string outputFile = "photonAnalyzer.root"
 
   string phoProducer = "photons"
   string corrPhoProducer = "correctedPhotons"
   string uncorrectedPhotonCollection = ""
   string correctedPhotonCollection   = ""
+  string primaryVertexProducer = "offlinePrimaryVerticesFromCTFTracks"
   string mcProducer = "VtxSmeared"
   
 
