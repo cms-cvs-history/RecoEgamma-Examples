@@ -13,7 +13,7 @@
 //
 // Original Author:  Ursula Berthon
 //         Created:  Mon Mar 27 13:22:06 CEST 2006
-// $Id: PixelMatchGsfElectronAnalyzer.cc,v 1.3 2007/03/23 00:36:05 futyand Exp $
+// $Id: PixelMatchGsfElectronAnalyzer.cc,v 1.5 2007/03/25 11:28:22 futyand Exp $
 //
 //
 
@@ -125,7 +125,7 @@ PixelMatchGsfElectronAnalyzer::analyze(const edm::Event& iEvent, const edm::Even
     histPhi_->Fill((*electron).phi());
 
     // track informations 
-    reco::GsfTrackRef tr =(*electron).track();
+    reco::GsfTrackRef tr =(*electron).gsfTrack();
     histTrCharge_->Fill(tr->charge());
     histTrInP_->Fill((*tr).innerMomentum().R());
     histTrInPt_->Fill((*tr).innerMomentum().Rho());
@@ -194,7 +194,10 @@ PixelMatchGsfElectronAnalyzer::analyze(const edm::Event& iEvent, const edm::Even
       double eTrue  = (*currentParticle)->momentum().e();
       double etTrue  = (*currentParticle)->momentum().e()/cosh(etaTrue);   
 
-      double etaFound,phiFound,etFound,eFound;
+      double etaFound = 0.;
+      double phiFound = 0.;
+      double etFound = 0.;
+      double eFound = 0.;
       double deltaRMin = 999.;
       double deltaPhiMin = 999.;
 
