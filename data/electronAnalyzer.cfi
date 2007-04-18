@@ -6,7 +6,7 @@ module electronAnalyzer = ElectronAnalyzer {
    InputTag electronProducer = pixelMatchElectrons
    # InputTag superClusterProducer = hybridSuperClusters
    InputTag superClusterProducer = islandSuperClusters:islandBarrelSuperClusters
-   string mcProducer = "VtxSmeared"
+   string mcProducer = "source"
  
    string islandBarrelBasicClusterCollection = "islandBarrelBasicClusters"
    string islandBarrelBasicClusterProducer = "islandBasicClusters"
