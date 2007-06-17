@@ -11,9 +11,6 @@
 #include "RecoEgamma/Examples/interface/SimplePhotonAnalyzer.h"
 #include "RecoEgamma/Examples/interface/SimpleConvertedPhotonAnalyzer.h"
 #include "RecoEgamma/Examples/interface/ElectronIDAnalyzer.h"
-#include "RecoEgamma/Examples/interface/MCPhotonAnalyzer.h"
-#include "RecoEgamma/Examples/interface/MCElectronAnalyzer.h"
-#include "RecoEgamma/Examples/interface/MCPizeroAnalyzer.h"
 
 
 //DEFINE_SEAL_MODULE();
@@ -26,6 +23,3 @@ DEFINE_FWK_MODULE(ElectronPixelSeedAnalyzer);
 DEFINE_FWK_MODULE(SimplePhotonAnalyzer);
 DEFINE_FWK_MODULE(SimpleConvertedPhotonAnalyzer);
 DEFINE_FWK_MODULE(ElectronIDAnalyzer);
-DEFINE_FWK_MODULE(MCPhotonAnalyzer);
-DEFINE_FWK_MODULE(MCElectronAnalyzer);
-DEFINE_FWK_MODULE(MCPizeroAnalyzer);
