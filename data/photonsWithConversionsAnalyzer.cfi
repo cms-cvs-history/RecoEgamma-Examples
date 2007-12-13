@@ -1,0 +1,16 @@
+#
+#  Author: N. Marinelli, U. of Notre Dame, US
+#
+
+module photonsWithConversionsAnalyzer = PhotonsWithConversionsAnalyzer {
+
+   untracked string HistOutFile = "analyzer.root"
+   untracked string moduleLabelMC = 'source'
+   untracked string moduleLabelTk = 'g4SimHits'
+   untracked string moduleLabelVtx = 'g4SimHits'
+   untracked string moduleLabelHit = 'g4SimHits'
+
+   string phoProducer = "photonsWithConversions"
+   string photonCollection = "photonsWithConversions"
+
+}
