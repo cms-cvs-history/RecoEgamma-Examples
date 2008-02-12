@@ -10,7 +10,7 @@ module photonsWithConversionsAnalyzer = PhotonsWithConversionsAnalyzer {
    untracked string moduleLabelVtx = 'g4SimHits'
    untracked string moduleLabelHit = 'g4SimHits'
 
-   string phoProducer = "photonsWithConversions"
-   string photonCollection = "photonsWithConversions"
+   string phoProducer = "correctedPhotons"
+   string photonCollection = "correctedPhotonsWithConversions"
 
 }
