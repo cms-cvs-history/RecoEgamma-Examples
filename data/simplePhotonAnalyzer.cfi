@@ -1,6 +1,6 @@
 #
 #  Author: N. Marinelli, U. of Notre Dame, US
-#  $Id: simplePhotonAnalyzer.cfi,v 1.5 2008/02/12 17:23:32 nancy Exp $ 
+#  $Id: simplePhotonAnalyzer.cfi,v 1.6 2008/03/16 23:13:04 nancy Exp $ 
 #
 
 module simplePhotonAnalyzer = SimplePhotonAnalyzer {
@@ -9,7 +9,8 @@ module simplePhotonAnalyzer = SimplePhotonAnalyzer {
   string photonCollection = ""
   string primaryVertexProducer = "offlinePrimaryVerticesFromCTFTracks"
   string mcProducer = "source"
-  
+# 1=pt10,2=pt35,3=E10,4=E1000
+  int32  sample = 2  
 
 
 
