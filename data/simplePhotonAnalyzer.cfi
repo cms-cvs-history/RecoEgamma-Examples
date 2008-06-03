@@ -1,14 +1,18 @@
 #
 #  Author: N. Marinelli, U. of Notre Dame, US
-#  $Id: simplePhotonAnalyzer.cfi,v 1.6 2008/03/16 23:13:04 nancy Exp $ 
+#  $Id: simplePhotonAnalyzer.cfi,v 1.7 2008/04/25 23:43:39 nancy Exp $ 
 #
 
 module simplePhotonAnalyzer = SimplePhotonAnalyzer {
 
   string phoProducer = "photons"
   string photonCollection = ""
-  string primaryVertexProducer = "offlinePrimaryVerticesFromCTFTracks"
   string mcProducer = "source"
+  string primaryVertexProducer  =          "offlinePrimaryVerticesWithBS"
+  InputTag barrelEcalHits = ecalRecHit:EcalRecHitsEB
+  InputTag endcapEcalHits = ecalRecHit:EcalRecHitsEE
+
+
 # 1=pt10,2=pt35,3=E10,4=E1000
   int32  sample = 2  
 
