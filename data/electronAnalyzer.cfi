@@ -4,13 +4,6 @@ module electronAnalyzer = ElectronAnalyzer {
    string outputFile = "electronAnalysisOutput.root"
  
    InputTag electronProducer = pixelMatchElectrons
-   # InputTag superClusterProducer = hybridSuperClusters
-   InputTag superClusterProducer = islandSuperClusters:islandBarrelSuperClusters
+   InputTag superClusterProducer = hybridSuperClusters
    string mcProducer = "source"
- 
-   string islandBarrelBasicClusterCollection = "islandBarrelBasicClusters"
-   string islandBarrelBasicClusterProducer = "islandBasicClusters"
-   string islandBarrelBasicClusterShapes = "islandBarrelShape" 
-       
-
 }
