@@ -1,0 +1,97 @@
+
+[oval run] =================================================
+[oval run] USER : chamont
+[oval run] HOST : lxplus206.cern.ch
+[oval run] DDS_RELEASE = CMSSW_2_2_0_pre1
+[oval run] DDS_LIKE = *IDEAL_V9_v1*-RECO
+[oval run] VAL_NEW_RELEASE = 220pre1TEST
+[oval run] VAL_REF_RELEASE = 219IDEAL
+[oval run] VAL_REF_DIR = ~uberthon/scratch0/electrons/CMSSW_2_1_9/src/RecoEgamma/Examples/test
+[oval run] DDS_SAMPLE = RelValSingleElectronPt35
+[oval run] VAL_ANALYZER = GsfElectronMCAnalyzer
+[oval run] VAL_REF_FILE = ${VAL_REF_DIR}/gsf-Pt35Ideal-ElectronHistos.root
+[oval run] run tool: scram
+[oval run] final instruction: ./newvalidation.csh Pt35 gsfElectronHistos.root
+[oval run] =================================================
+
+Processing newvalidation.C...
+h_ele_PoPtrue has 18927.7 entries of mean value 0.98614
+Info in <TCanvas::Print>: gif file gifs/h_ele_PoPtrue.gif has been created
+h_ele_PoPtrue_barrel has 11996.6 entries of mean value 0.988401
+Info in <TCanvas::Print>: gif file gifs/h_ele_PoPtrue_barrel.gif has been created
+h_ele_PoPtrue_endcaps has 6931 entries of mean value 0.982431
+Info in <TCanvas::Print>: gif file gifs/h_ele_PoPtrue_endcaps.gif has been created
+h_scl_EoEtrue_barrel has 11997.7 entries of mean value 0.986948
+Info in <TCanvas::Print>: gif file gifs/h_scl_EoEtrue_barrel.gif has been created
+h_scl_EoEtrue_endcaps has 6929.93 entries of mean value 0.98318
+Info in <TCanvas::Print>: gif file gifs/h_scl_EoEtrue_endcaps.gif has been created
+h_ele_EtaMnEtaTrue has 18917.7 entries of mean value -9.86011e-07
+Info in <TCanvas::Print>: gif file gifs/h_ele_EtaMnEtaTrue.gif has been created
+h_ele_PhiMnPhiTrue has 18760.5 entries of mean value -2.95628e-06
+Info in <TCanvas::Print>: gif file gifs/h_ele_PhiMnPhiTrue.gif has been created
+h_ele_vertexP has 18931 entries of mean value 80.8028
+Info in <TCanvas::Print>: gif file gifs/h_ele_vertexP.gif has been created
+h_ele_vertexPt has 18928.8 entries of mean value 34.5094
+Info in <TCanvas::Print>: gif file gifs/h_ele_vertexPt.gif has been created
+h_ele_outerP_mode has 18928.8 entries of mean value 38.0049
+Info in <TCanvas::Print>: gif file gifs/h_ele_outerP_mode.gif has been created
+h_ele_outerPt_mode has 18929.9 entries of mean value 17.175
+Info in <TCanvas::Print>: gif file gifs/h_ele_outerPt_mode.gif has been created
+h_ele_vertexX has 18905.5 entries of mean value 0.032497
+Info in <TCanvas::Print>: gif file gifs/h_ele_vertexX.gif has been created
+h_ele_vertexY has 18908.9 entries of mean value 0.000231485
+Info in <TCanvas::Print>: gif file gifs/h_ele_vertexY.gif has been created
+h_ele_vertexZ has 18931 entries of mean value 0.0267529
+Info in <TCanvas::Print>: gif file gifs/h_ele_vertexZ.gif has been created
+h_ele_EoP has 18722.9 entries of mean value 1.19642
+Info in <TCanvas::Print>: gif file gifs/h_ele_EoP.gif has been created
+h_ele_EoPout has 15031 entries of mean value 1.8502
+Info in <TCanvas::Print>: gif file gifs/h_ele_EoPout.gif has been created
+h_ele_dEtaCl_propOut has 18842.4 entries of mean value 3.20486e-05
+Info in <TCanvas::Print>: gif file gifs/h_ele_dEtaCl_propOut.gif has been created
+h_ele_dEtaSc_propVtx has 18931 entries of mean value 1.83907e-05
+Info in <TCanvas::Print>: gif file gifs/h_ele_dEtaSc_propVtx.gif has been created
+h_ele_dPhiCl_propOut has 18451.7 entries of mean value -9.55124e-05
+Info in <TCanvas::Print>: gif file gifs/h_ele_dPhiCl_propOut.gif has been created
+h_ele_dPhiSc_propVtx has 18931 entries of mean value -5.1576e-05
+Info in <TCanvas::Print>: gif file gifs/h_ele_dPhiSc_propVtx.gif has been created
+h_ele_HoE has 18931 entries of mean value 0.0060935
+Info in <TCanvas::Print>: gif file gifs/h_ele_HoE.gif has been created
+h_ele_chi2 has 18090.8 entries of mean value 1.31892
+h_ele_foundHits has 16269.7 entries of mean value 16.1514
+h_ele_lostHits has 18931 entries of mean value 0.67958
+h_ele_PinMnPout_mode has 17675.6 entries of mean value 29.3534
+h_ele_classes has 18931 entries of mean value 62.275
+h_ele_charge has 18931 entries of mean value -0.000421019
+h_ele_EoverP_all has 19238.6 entries of mean value 1.2131
+h_recEleNum has 10250 entries of mean value 2.40486
+h_ele_absetaEff has 23.1013 entries of mean value 1.2173
+h_ele_etaEff has 46.2025 entries of mean value -0.000813159
+h_ele_ptEff has 1.84876 entries of mean value 35.0005
+h_ele_phiEff has 59.1013 entries of mean value 0.00562153
+h_ele_zEff has 22.6841 entries of mean value -0.117718
+h_ele_etaEff_all has 47.5998 entries of mean value 0.00203355
+h_ele_ptEff_all has 1.86504 entries of mean value 34.6156
+h_ele_PoPtrueVsEta_pfx has 140.954 entries of mean value -0.000965138
+h_ele_PoPtrueVsPhi_pfx has 97.9608 entries of mean value 0.00491286
+h_ele_EtaMnEtaTrueVsEta_pfx has 259.457 entries of mean value -0.000529642
+h_ele_PhiMnPhiTrueVsEta_pfx has 238.754 entries of mean value -0.000622603
+h_ele_vertexPtVsEta_pfx has 83.255 entries of mean value -0.000938761
+h_ele_EoPVsEta_pfx has 223.32 entries of mean value 4.24654e-05
+h_ele_EoPoutVsEta_pfx has 401.747 entries of mean value 0.00479628
+h_ele_HoEVsEta_pfx has 55.114 entries of mean value -0.000962045
+h_ele_chi2VsEta_pfx has 169.484 entries of mean value 0.00170135
+h_ele_foundHitsVsEta_pfx has 140.147 entries of mean value -0.0180367
+h_ele_fbremvsEtamean has 16983 entries of mean value -0.000894421
+h_ele_fbremvsEtamode has 16803 entries of mean value -0.000881365
+h_ele_eta_bbremFrac has 1.57086 entries of mean value 1.24458
+h_ele_eta_goldenFrac has 4.62365 entries of mean value 0.946549
+h_ele_eta_narrowFrac has 2.09433 entries of mean value 1.0832
+h_ele_eta_showerFrac has 14.6658 entries of mean value 1.40779
+You can view your validation plots here:
+http://cmsdoc.cern.ch/Physics/egamma/www/validation/220pre1TEST/RelValSingleElectronPt35_220pre1TEST_219IDEAL/validation.html
+
+[oval run] ==========================================
+[oval run] result: OK
+[oval run] ==========================================
+
