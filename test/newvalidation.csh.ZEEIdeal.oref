@@ -1,0 +1,100 @@
+
+[oval run] =================================================
+[oval run] USER : chamont
+[oval run] HOST : lxcmsf2.cern.ch
+[oval run] TEST_OUTPUT_FILE = gsfElectronHistos.root
+[oval run] DBS_RELEASE = CMSSW_3_1_0_pre8
+[oval run] DBS_LIKE = *IDEAL_31X_v1*-RECO
+[oval run] VAL_NEW_RELEASE = 310pre8
+[oval run] VAL_REF_RELEASE = 310pre7
+[oval run] DBS_SAMPLE = RelValZEE
+[oval run] VAL_ANALYZER = GsfElectronMCAnalyzer
+[oval run] run tool: scram
+[oval run] final instruction: ./newvalidation.csh ZEEIdeal ${TEST_OUTPUT_FILE}
+[oval run] =================================================
+
+VAL_NEW_RELEASE = 310pre8
+VAL_REF_RELEASE = 310pre7
+VAL_NEW_FILE = /afs/cern.ch/user/c/chamont/w1/CMSSW_310_Val/src/RecoEgamma/Examples/test/cmsRun.ZEEIdeal.olog.gsfElectronHistos.root
+VAL_REF_FILE = /afs/cern.ch/cms/Physics/egamma/www/validation/310pre7/data/cmsRun.ZEEIdeal.olog.gsfElectronHistos.root
+
+Processing newvalidation.C...
+h_ele_PoPtrue has 6321 entries of mean value 0.981994
+h_ele_PoPtrue_barrel has 4101 entries of mean value 0.986043
+h_ele_PoPtrue_endcaps has 2220 entries of mean value 0.974516
+h_scl_EoEtrue_barrel has 4098 entries of mean value 0.984717
+h_scl_EoEtrue_endcaps has 4424 entries of mean value 0.978983
+h_scl_sigetaeta has 6323 entries of mean value 0.0121986
+h_scl_sigietaieta_barrel has 4103 entries of mean value 0.00884343
+h_scl_sigietaieta_endcaps has 2217 entries of mean value 0.0248819
+h_scl_E1x5 has 6316 entries of mean value 50.8265
+h_scl_E2x5max has 6307 entries of mean value 62.8302
+h_scl_E5x5 has 6297 entries of mean value 67.5136
+h_ele_EtaMnEtaTrue has 6118 entries of mean value 6.01448e-06
+h_ele_PhiMnPhiTrue has 6119 entries of mean value -3.03678e-05
+h_ele_vertexP has 6289 entries of mean value 77.2246
+h_ele_vertexPt has 6323 entries of mean value 35.0982
+h_ele_outerP_mode has 6315 entries of mean value 34.395
+h_ele_outerPt_mode has 6319 entries of mean value 16.8436
+h_ele_vertexX has 6315 entries of mean value 0.032251
+h_ele_vertexY has 6317 entries of mean value -9.69686e-05
+h_ele_vertexZ has 6323 entries of mean value 0.0812172
+h_ele_EoP has 6223 entries of mean value 1.21293
+h_ele_EoPout has 5112 entries of mean value 1.85095
+h_ele_EeleOPout has 5755 entries of mean value 1.57657
+h_ele_EseedOP has 6260 entries of mean value 1.02736
+h_ele_dEtaCl_propOut has 6314 entries of mean value 2.50337e-05
+h_ele_dEtaEleCl_propOut has 6312 entries of mean value 3.19279e-05
+h_ele_dEtaSc_propVtx has 6323 entries of mean value 1.58518e-05
+h_ele_dPhiCl_propOut has 6181 entries of mean value -0.00024189
+h_ele_dPhiEleCl_propOut has 6274 entries of mean value -0.00050353
+h_ele_dPhiSc_propVtx has 6320 entries of mean value -0.000112539
+h_ele_HoE has 6311 entries of mean value 0.00317058
+h_ele_chi2 has 6255 entries of mean value 1.32437
+h_ele_foundHits has 5397 entries of mean value 15.7135
+h_ele_lostHits has 6323 entries of mean value 0.130002
+h_ele_ambiguousTracks has 6323 entries of mean value 0.0578839
+h_ele_PinMnPout_mode has 5839 entries of mean value 27.3213
+h_ele_fbrem has 3231 entries of mean value 0.334224
+h_ele_seedDphi2 has 6120 entries of mean value -0.000387152
+h_ele_seedDrz2 has 5647 entries of mean value 0.000920092
+h_ele_seedSubdet2 has 6323 entries of mean value 1.18108
+h_ele_classes has 6323 entries of mean value 5.97754
+h_ele_charge has 6323 entries of mean value -0.00237229
+h_ele_EoverP_all has 7262 entries of mean value 1.21674
+h_ele_mee_all has 3492 entries of mean value 69.8942
+h_recEleNum has 5200 entries of mean value 1.44269
+h_ele_absetaEff has 60993.9 entries of mean value 1.2134
+h_ele_etaEff has 60995.4 entries of mean value -0.00629275
+h_ele_ptEff has 9098.7 entries of mean value 53.2412
+h_ele_phiEff has 61675.6 entries of mean value -0.00120625
+h_ele_zEff has 6223.68 entries of mean value 1.37967
+h_ele_etaEff_all has 91439.9 entries of mean value -0.00163012
+h_ele_ptEff_all has 4044.18 entries of mean value 48.6538
+h_ele_PoPtrueVsEta_pfx has 174.761 entries of mean value 0.0039557
+h_ele_PoPtrueVsPhi_pfx has 126.376 entries of mean value 0.0067869
+h_ele_EtaMnEtaTrueVsEta_pfx has 298.451 entries of mean value 0.00285271
+h_ele_PhiMnPhiTrueVsEta_pfx has 260.534 entries of mean value 0.00540121
+h_ele_vertexPtVsEta_pfx has 976.489 entries of mean value 0.00392281
+h_ele_EoPVsEta_pfx has 234.235 entries of mean value 0.000707935
+h_ele_EoPoutVsEta_pfx has 379.857 entries of mean value 0.00758826
+h_ele_HoEVsEta_pfx has 53.2673 entries of mean value 0.00339144
+h_ele_chi2VsEta_pfx has 173.809 entries of mean value 0.00575632
+h_ele_foundHitsVsEta_pfx has 121.82 entries of mean value -0.00924759
+h_ele_seedDphi2VsEta_pfx has 962.994 entries of mean value -0.0036689
+h_ele_seedDphi2VsPt_pfx has 499.885 entries of mean value 35.5529
+h_ele_seedDrz2VsEta_pfx has 825.11 entries of mean value 0.00474672
+h_ele_seedDrz2VsPt_pfx has 516.222 entries of mean value 35.8968
+h_ele_fbremvsEtamean has 6257 entries of mean value 0.00729377
+h_ele_fbremvsEtamode has 3230 entries of mean value 0.024547
+h_ele_eta_bbremFrac has 592.616 entries of mean value 1.2265
+h_ele_eta_goldenFrac has 1156.81 entries of mean value 0.943318
+h_ele_eta_narrowFrac has 305.533 entries of mean value 1.09707
+h_ele_eta_showerFrac has 10641.5 entries of mean value 1.39374
+You can view your validation plots here:
+http://cmsdoc.cern.ch/Physics/egamma/www/validation/310pre8/vs310pre7/RelValZEE_Ideal/validation.html
+
+[oval run] ==========================================
+[oval run] result: OK
+[oval run] ==========================================
+
