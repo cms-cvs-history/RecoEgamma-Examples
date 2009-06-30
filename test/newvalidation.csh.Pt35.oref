@@ -3,96 +3,128 @@
 [oval run] USER : chamont
 [oval run] HOST : lxcmsf2.cern.ch
 [oval run] TEST_OUTPUT_FILE = gsfElectronHistos.root
-[oval run] DBS_RELEASE = CMSSW_3_1_0_pre8
-[oval run] DBS_LIKE = *IDEAL_31X_v1*-RECO
-[oval run] VAL_NEW_RELEASE = 310pre8
-[oval run] VAL_REF_RELEASE = 310pre7
+[oval run] DBS_RELEASE = CMSSW_3_1_0_pre11
+[oval run] DBS_LIKE = *MC_31X_V1-v1*-RECO
+[oval run] VAL_NEW_RELEASE = 310pre11
+[oval run] VAL_REF_RELEASE = 310pre10
 [oval run] DBS_SAMPLE = RelValSingleElectronPt35
 [oval run] VAL_ANALYZER = GsfElectronMCAnalyzer
 [oval run] run tool: scram
 [oval run] final instruction: ./newvalidation.csh Pt35 ${TEST_OUTPUT_FILE}
 [oval run] =================================================
 
-VAL_NEW_RELEASE = 310pre8
-VAL_REF_RELEASE = 310pre7
+VAL_NEW_RELEASE = 310pre11
+VAL_REF_RELEASE = 310pre10
 VAL_NEW_FILE = /afs/cern.ch/user/c/chamont/w1/CMSSW_310_Val/src/RecoEgamma/Examples/test/cmsRun.Pt35.olog.gsfElectronHistos.root
-VAL_REF_FILE = /afs/cern.ch/cms/Physics/egamma/www/validation/310pre7/data/cmsRun.Pt35.olog.gsfElectronHistos.root
+VAL_REF_FILE = /afs/cern.ch/cms/Physics/egamma/www/validation/310pre10/data/cmsRun.Pt35.olog.gsfElectronHistos.root
 
 Processing newvalidation.C...
-h_ele_PoPtrue has 16730 entries of mean value 0.987839
-h_ele_PoPtrue_barrel has 10446 entries of mean value 0.99092
-h_ele_PoPtrue_endcaps has 6284 entries of mean value 0.982718
-h_scl_EoEtrue_barrel has 10449 entries of mean value 0.990007
-h_scl_EoEtrue_endcaps has 12550 entries of mean value 0.985219
-h_scl_sigetaeta has 16736 entries of mean value 0.0122969
-h_scl_sigietaieta_barrel has 10452 entries of mean value 0.00863007
-h_scl_sigietaieta_endcaps has 6282 entries of mean value 0.024209
-h_scl_E1x5 has 16736 entries of mean value 52.5727
-h_scl_E2x5max has 16736 entries of mean value 65.6989
-h_scl_E5x5 has 16736 entries of mean value 70.9261
-h_ele_EtaMnEtaTrue has 16722 entries of mean value -1.5817e-06
-h_ele_PhiMnPhiTrue has 16522 entries of mean value -2.03651e-06
-h_ele_vertexP has 16735 entries of mean value 81.2493
-h_ele_vertexPt has 16735 entries of mean value 34.5826
-h_ele_outerP_mode has 16733 entries of mean value 36.2366
-h_ele_outerPt_mode has 16734 entries of mean value 16.6744
-h_ele_vertexX has 16712 entries of mean value 0.0321519
-h_ele_vertexY has 16725 entries of mean value -6.75695e-05
-h_ele_vertexZ has 16736 entries of mean value 0.0163734
-h_ele_EoP has 16490 entries of mean value 1.20869
-h_ele_EoPout has 13475 entries of mean value 1.89476
-h_ele_EeleOPout has 15309 entries of mean value 1.63054
-h_ele_EseedOP has 16563 entries of mean value 1.04121
-h_ele_dEtaCl_propOut has 16725 entries of mean value 2.37495e-05
-h_ele_dEtaEleCl_propOut has 16720 entries of mean value -3.22117e-05
-h_ele_dEtaSc_propVtx has 16736 entries of mean value 2.00575e-05
-h_ele_dPhiCl_propOut has 16504 entries of mean value 0.0001578
-h_ele_dPhiEleCl_propOut has 16647 entries of mean value 5.21761e-05
-h_ele_dPhiSc_propVtx has 16736 entries of mean value -4.84102e-05
-h_ele_HoE has 16702 entries of mean value 0.0021112
-h_ele_chi2 has 16539 entries of mean value 1.30957
-h_ele_foundHits has 14303 entries of mean value 15.7326
-h_ele_lostHits has 16736 entries of mean value 0.116874
-h_ele_ambiguousTracks has 16734 entries of mean value 0.0580853
-h_ele_PinMnPout_mode has 15585 entries of mean value 29.9189
-h_ele_fbrem has 8563 entries of mean value 0.340643
-h_ele_seedDphi2 has 16395 entries of mean value -0.00047475
-h_ele_seedDrz2 has 15291 entries of mean value 0.000622845
-h_ele_seedSubdet2 has 16736 entries of mean value 1.22425
-h_ele_classes has 16736 entries of mean value 6.17412
-h_ele_charge has 16736 entries of mean value 0.000119503
-h_ele_EoverP_all has 16955 entries of mean value 1.21996
-h_ele_mee_all has 5015 entries of mean value 94.8757
-h_recEleNum has 9000 entries of mean value 1.91744
-h_ele_absetaEff has 255520 entries of mean value 1.21624
-h_ele_etaEff has 255848 entries of mean value 0.00405671
-h_ele_ptEff has 238368 entries of mean value 35.0038
-h_ele_phiEff has 233891 entries of mean value -0.000603959
-h_ele_zEff has 3145.34 entries of mean value -0.202017
-h_ele_etaEff_all has 445699 entries of mean value 0.00179311
-h_ele_ptEff_all has 258120 entries of mean value 34.8734
-h_ele_PoPtrueVsEta_pfx has 155.507 entries of mean value 0.00407425
-h_ele_PoPtrueVsPhi_pfx has 110.34 entries of mean value 0.0160789
-h_ele_EtaMnEtaTrueVsEta_pfx has 255.844 entries of mean value 0.00377116
-h_ele_PhiMnPhiTrueVsEta_pfx has 238.9 entries of mean value 0.0047067
-h_ele_vertexPtVsEta_pfx has 90.4323 entries of mean value 0.00404614
-h_ele_EoPVsEta_pfx has 229.979 entries of mean value 0.00985697
-h_ele_EoPoutVsEta_pfx has 418.486 entries of mean value 0.00537342
-h_ele_HoEVsEta_pfx has 52.9425 entries of mean value 0.00426672
-h_ele_chi2VsEta_pfx has 176.23 entries of mean value 0.00278786
-h_ele_foundHitsVsEta_pfx has 130.907 entries of mean value -0.0125664
-h_ele_seedDphi2VsEta_pfx has 1063.89 entries of mean value 0.00324549
-h_ele_seedDphi2VsPt_pfx has 44.367 entries of mean value 34.6787
-h_ele_seedDrz2VsEta_pfx has 903.382 entries of mean value 0.00235479
-h_ele_seedDrz2VsPt_pfx has 39.0013 entries of mean value 34.7342
-h_ele_fbremvsEtamean has 16596 entries of mean value 0.00271784
-h_ele_fbremvsEtamode has 8561 entries of mean value 0.0108149
-h_ele_eta_bbremFrac has 1793.42 entries of mean value 1.22047
-h_ele_eta_goldenFrac has 3339.19 entries of mean value 0.884292
-h_ele_eta_narrowFrac has 988.345 entries of mean value 1.15062
-h_ele_eta_showerFrac has 26423 entries of mean value 1.41819
+h_ele_charge has 16719 entries of mean value -0.000418685
+h_ele_vertexX has 16704 entries of mean value 0.032282
+h_ele_vertexY has 16704 entries of mean value -5.52771e-05
+h_ele_vertexZ has 16719 entries of mean value -0.0570393
+h_ele_vertexTIP has 16707 entries of mean value 0.0059344
+h_ele_vertexP has 16719 entries of mean value 80.2991
+h_ele_vertexPt has 16719 entries of mean value 34.5119
+h_ele_outerP_mode has 16716 entries of mean value 36.1345
+h_ele_outerPt_mode has 16717 entries of mean value 16.8095
+h_ele_ChargeMnChargeTrue has 17239 entries of mean value 0.0599803
+h_ele_PoPtrue has 16717 entries of mean value 0.985898
+h_ele_PoPtrue_barrel has 10451 entries of mean value 0.98969
+h_ele_PoPtrue_endcaps has 6266 entries of mean value 0.979573
+h_ele_EtaMnEtaTrue has 16698 entries of mean value 1.75676e-06
+h_ele_PhiMnPhiTrue has 16482 entries of mean value 8.08181e-06
+h_ele_EoP has 16436 entries of mean value 1.2052
+h_ele_EoPout has 13421 entries of mean value 1.88322
+h_ele_EeleOPout has 15254 entries of mean value 1.62293
+h_ele_EseedOP has 16542 entries of mean value 1.04849
+h_ele_dEtaCl_propOut has 16705 entries of mean value 1.02407e-05
+h_ele_dEtaEleCl_propOut has 16694 entries of mean value 3.94979e-06
+h_ele_dEtaSc_propVtx has 16718 entries of mean value 3.29079e-05
+h_ele_dPhiCl_propOut has 16484 entries of mean value 0.000228573
+h_ele_dPhiEleCl_propOut has 16626 entries of mean value -8.77314e-05
+h_ele_dPhiSc_propVtx has 16715 entries of mean value 6.34747e-05
+h_ele_HoE has 16691 entries of mean value 0.00272164
+h_ele_HoE_fiducial has 14712 entries of mean value 0.00180881
+h_scl_EoEtrue_barrel has 10448 entries of mean value 0.988376
+h_scl_EoEtrue_endcaps has 12496 entries of mean value 0.983309
+h_scl_EoEtrue_barrel_etagap has 511 entries of mean value 0.961342
+h_scl_EoEtrue_barrel_phigap has 1059 entries of mean value 0.984048
+h_scl_EoEtrue_ebeegap has 292 entries of mean value 0.832982
+h_scl_EoEtrue_endcaps_deegap has 156 entries of mean value 0.97011
+h_scl_EoEtrue_endcaps_ringgap has 42 entries of mean value 1.00827
+h_scl_sigetaeta has 16719 entries of mean value 0.0122701
+h_scl_sigietaieta_barrel has 10453 entries of mean value 0.00866521
+h_scl_sigietaieta_endcaps has 6264 entries of mean value 0.024249
+h_scl_E1x5 has 16719 entries of mean value 52.0254
+h_scl_E2x5max has 16719 entries of mean value 64.9854
+h_scl_E5x5 has 16719 entries of mean value 70.1726
+h_ele_chi2 has 16501 entries of mean value 1.30241
+h_ele_foundHits has 14509 entries of mean value 15.6791
+h_ele_lostHits has 16719 entries of mean value 0.115378
+h_ele_ambiguousTracks has 16718 entries of mean value 0.0576026
+h_ele_seedDphi2 has 16324 entries of mean value -0.000481312
+h_ele_seedDrz2 has 15259 entries of mean value 0.000767522
+h_ele_seedSubdet2 has 16719 entries of mean value 1.22304
+h_ele_PinMnPout_mode has 15552 entries of mean value 29.1695
+h_ele_fbrem has 16400 entries of mean value 0.474704
+h_ele_classes has 16719 entries of mean value 6.13308
+h_ele_mva has 16567 entries of mean value 0.768375
+h_ele_tkSumPt_dr03 has 16716 entries of mean value 0.224972
+h_ele_ecalRecHitSumEt_dr03 has 12099 entries of mean value 0.600974
+h_ele_hcalDepth1TowerSumEt_dr03 has 16718 entries of mean value 0.011473
+h_ele_hcalDepth2TowerSumEt_dr03 has 16719 entries of mean value 0.000202358
+h_ele_tkSumPt_dr04 has 16716 entries of mean value 0.226189
+h_ele_ecalRecHitSumEt_dr04 has 13077 entries of mean value 0.918719
+h_ele_hcalDepth1TowerSumEt_dr04 has 16718 entries of mean value 0.0162616
+h_ele_hcalDepth2TowerSumEt_dr04 has 16719 entries of mean value 0.000310731
+h_recEleNum has 9000 entries of mean value 1.91789
+h_ele_EoverP_all has 16914 entries of mean value 1.21921
+h_ele_EseedOP_all has 17036 entries of mean value 1.06098
+h_ele_EoPout_all has 13666 entries of mean value 1.89973
+h_ele_EeleOPout_all has 15621 entries of mean value 1.63161
+h_ele_TIP_all has 17238 entries of mean value 0.0333692
+h_ele_dEtaSc_propVtx_all has 17258 entries of mean value 2.98172e-05
+h_ele_dPhiSc_propVtx_all has 17253 entries of mean value 3.30972e-05
+h_ele_dEtaCl_propOut_all has 17241 entries of mean value 1.69985e-05
+h_ele_dPhiCl_propOut_all has 16989 entries of mean value 5.42186e-05
+h_ele_HoE_all has 17230 entries of mean value 0.00275913
+h_ele_mee_all has 5056 entries of mean value 94.1337
+h_ele_absetaEff has 246557 entries of mean value 1.21531
+h_ele_etaEff has 246814 entries of mean value 0.000576643
+h_ele_ptEff has 234573 entries of mean value 34.9922
+h_ele_phiEff has 228320 entries of mean value 0.00182368
+h_ele_zEff has 6646.6 entries of mean value 0.0335643
+h_ele_etaEff_all has 440938 entries of mean value 0.00151128
+h_ele_ptEff_all has 234756 entries of mean value 34.9101
+h_ele_absetaQmisid has 546.937 entries of mean value 1.90205
+h_ele_etaQmisid has 547.392 entries of mean value 0.037366
+h_ele_ptQmisid has 532.142 entries of mean value 34.911
+h_ele_zQmisid has 77.6362 entries of mean value 1.21394
+h_ele_vertexPtVsEta_pfx has 89.6342 entries of mean value 0.000559244
+h_ele_PoPtrueVsEta_pfx has 154.448 entries of mean value 0.000666986
+h_ele_PoPtrueVsPhi_pfx has 110.011 entries of mean value -0.0120775
+h_scl_EoEtruePfVseg_pfy has 22.5399 entries of mean value 0.937929
+h_ele_EtaMnEtaTrueVsEta_pfx has 258.48 entries of mean value 0.000886334
+h_ele_PhiMnPhiTrueVsEta_pfx has 232.136 entries of mean value 0.00209926
+h_ele_EoPVsEta_pfx has 224.065 entries of mean value -0.00126989
+h_ele_EoPoutVsEta_pfx has 409.722 entries of mean value -0.00933409
+h_ele_EeleOPoutVsEta_pfx has 434.389 entries of mean value -0.0060485
+h_ele_HoEVsEta_pfx has 53.0807 entries of mean value -8.08819e-05
+h_ele_chi2VsEta_pfx has 172.014 entries of mean value 0.000833283
+h_ele_foundHitsVsEta_pfx has 145.014 entries of mean value -0.022424
+h_ele_seedDphi2VsEta_pfx has 1099.54 entries of mean value 0.00253614
+h_ele_seedDphi2VsPt_pfx has 45.5316 entries of mean value 34.6378
+h_ele_seedDrz2VsEta_pfx has 906.09 entries of mean value -0.000796251
+h_ele_seedDrz2VsPt_pfx has 39.4658 entries of mean value 34.7056
+h_ele_fbremvsEtamean has 16594 entries of mean value 0.000335966
+h_ele_fbremvsEtamode has 16400 entries of mean value -0.000132769
+h_ele_eta_bbremFrac has 1194.66 entries of mean value 1.27756
+h_ele_eta_goldenFrac has 3881.98 entries of mean value 0.954829
+h_ele_eta_narrowFrac has 1465.48 entries of mean value 1.12776
+h_ele_eta_showerFrac has 24448.7 entries of mean value 1.40834
 You can view your validation plots here:
-http://cmsdoc.cern.ch/Physics/egamma/www/validation/310pre8/vs310pre7/RelValSingleElectronPt35_Ideal/validation.html
+http://cmsdoc.cern.ch/Physics/egamma/www/validation/310pre11/vs310pre10/RelValSingleElectronPt35/validation.html
 
 [oval run] ==========================================
 [oval run] result: OK
@@ -100,10 +132,10 @@ http://cmsdoc.cern.ch/Physics/egamma/www/validation/310pre8/vs310pre7/RelValSing
 
 [oval diff] ================================================
 [oval diff] TEST_OUTPUT_FILE = gsfElectronHistos.root
-[oval diff] DBS_RELEASE = CMSSW_3_1_0_pre8
-[oval diff] DBS_LIKE = *IDEAL_31X_v1*-RECO
-[oval diff] VAL_NEW_RELEASE = 310pre8
-[oval diff] VAL_REF_RELEASE = 310pre7
+[oval diff] DBS_RELEASE = CMSSW_3_1_0_pre11
+[oval diff] DBS_LIKE = *MC_31X_V1-v1*-RECO
+[oval diff] VAL_NEW_RELEASE = 310pre11
+[oval diff] VAL_REF_RELEASE = 310pre10
 [oval diff] DBS_SAMPLE = RelValSingleElectronPt35
 [oval diff] VAL_ANALYZER = GsfElectronMCAnalyzer
 [oval diff] diff file: gsfElectronHistos.root
@@ -116,299 +148,488 @@ http://cmsdoc.cern.ch/Physics/egamma/www/validation/310pre8/vs310pre7/RelValSing
 [oval diff] diff file: gsfElectronHistos.root
 [oval diff] ================================================
 
-=== olog #22 != oref
-olog: h_ele_PoPtrue has 16730 entries of mean value 0.987839
-olog: h_ele_PoPtrue_barrel has 10446 entries of mean value 0.99092
-=== olog #25 != oref
-olog: h_scl_EoEtrue_barrel has 10449 entries of mean value 0.990007
-olog: h_scl_EoEtrue_endcaps has 12550 entries of mean value 0.985219
-olog: h_scl_sigetaeta has 16736 entries of mean value 0.0122969
-olog: h_scl_sigietaieta_barrel has 10452 entries of mean value 0.00863007
-olog: h_scl_sigietaieta_endcaps has 6282 entries of mean value 0.024209
-olog: h_scl_E1x5 has 16736 entries of mean value 52.5727
-olog: h_scl_E2x5max has 16736 entries of mean value 65.6989
-olog: h_scl_E5x5 has 16736 entries of mean value 70.9261
-olog: h_ele_EtaMnEtaTrue has 16722 entries of mean value -1.5817e-06
-olog: h_ele_PhiMnPhiTrue has 16522 entries of mean value -2.03651e-06
-=== olog #36 != oref
-olog: h_ele_vertexPt has 16735 entries of mean value 34.5826
-olog: h_ele_outerP_mode has 16733 entries of mean value 36.2366
-olog: h_ele_outerPt_mode has 16734 entries of mean value 16.6744
-olog: h_ele_vertexX has 16712 entries of mean value 0.0321519
-olog: h_ele_vertexY has 16725 entries of mean value -6.75695e-05
-=== olog #42 != oref
-olog: h_ele_EoP has 16490 entries of mean value 1.20869
-=== olog #44 != oref
-olog: h_ele_EeleOPout has 15309 entries of mean value 1.63054
-olog: h_ele_EseedOP has 16563 entries of mean value 1.04121
-olog: h_ele_dEtaCl_propOut has 16725 entries of mean value 2.37495e-05
-olog: h_ele_dEtaEleCl_propOut has 16720 entries of mean value -3.22117e-05
-=== olog #49 != oref
-olog: h_ele_dPhiCl_propOut has 16504 entries of mean value 0.0001578
-olog: h_ele_dPhiEleCl_propOut has 16647 entries of mean value 5.21761e-05
-=== olog #53 != oref
-olog: h_ele_chi2 has 16539 entries of mean value 1.30957
-olog: h_ele_foundHits has 14303 entries of mean value 15.7326
-=== olog #56 != oref
-olog: h_ele_ambiguousTracks has 16734 entries of mean value 0.0580853
-olog: h_ele_PinMnPout_mode has 15585 entries of mean value 29.9189
-olog: h_ele_fbrem has 8563 entries of mean value 0.340643
-olog: h_ele_seedDphi2 has 16395 entries of mean value -0.00047475
-olog: h_ele_seedDrz2 has 15291 entries of mean value 0.000622845
-olog: h_ele_seedSubdet2 has 16736 entries of mean value 1.22425
-=== olog #64 != oref
-olog: h_ele_EoverP_all has 16955 entries of mean value 1.21996
-olog: h_ele_mee_all has 5015 entries of mean value 94.8757
-=== olog #67 != oref
-olog: h_ele_absetaEff has 255520 entries of mean value 1.21624
-olog: h_ele_etaEff has 255848 entries of mean value 0.00405671
-olog: h_ele_ptEff has 238368 entries of mean value 35.0038
-olog: h_ele_phiEff has 233891 entries of mean value -0.000603959
-=== olog #72 != oref
-olog: h_ele_etaEff_all has 445699 entries of mean value 0.00179311
-olog: h_ele_ptEff_all has 258120 entries of mean value 34.8734
-=== olog #93 != oref
-olog: h_ele_eta_showerFrac has 26423 entries of mean value 1.41819
-=== olog #22 !~ oref #22 (>20%)
-olog: h_ele_PoPtrue has 16730 entries of mean value 0.987839
+=== olog #22 != oref #22
+olog: h_ele_charge has 16719 entries of mean value -0.000418685
+olog: h_ele_vertexX has 16704 entries of mean value 0.032282
+olog: h_ele_vertexY has 16704 entries of mean value -5.52771e-05
+olog: h_ele_vertexZ has 16719 entries of mean value -0.0570393
 ---
-oref: h_ele_PoPtrue_endcaps has 6931 entries of mean value 0.982431
-=== olog #23 !~ oref #32 (>20%)
-olog: h_ele_PoPtrue_barrel has 10446 entries of mean value 0.99092
+oref: h_ele_PoPtrue has 16730 entries of mean value 0.987839
+oref: h_ele_PoPtrue_barrel has 10446 entries of mean value 0.99092
+oref: h_ele_PoPtrue_endcaps has 6284 entries of mean value 0.982718
+oref: h_scl_EoEtrue_barrel has 10449 entries of mean value 0.990007
+=== olog #26 != oref
+olog: h_ele_vertexTIP has 16707 entries of mean value 0.0059344
+olog: h_ele_vertexP has 16719 entries of mean value 80.2991
+olog: h_ele_vertexPt has 16719 entries of mean value 34.5119
+olog: h_ele_outerP_mode has 16716 entries of mean value 36.1345
+olog: h_ele_outerPt_mode has 16717 entries of mean value 16.8095
+olog: h_ele_ChargeMnChargeTrue has 17239 entries of mean value 0.0599803
+olog: h_ele_PoPtrue has 16717 entries of mean value 0.985898
+olog: h_ele_PoPtrue_barrel has 10451 entries of mean value 0.98969
+olog: h_ele_PoPtrue_endcaps has 6266 entries of mean value 0.979573
+olog: h_ele_EtaMnEtaTrue has 16698 entries of mean value 1.75676e-06
+olog: h_ele_PhiMnPhiTrue has 16482 entries of mean value 8.08181e-06
+olog: h_ele_EoP has 16436 entries of mean value 1.2052
+olog: h_ele_EoPout has 13421 entries of mean value 1.88322
+olog: h_ele_EeleOPout has 15254 entries of mean value 1.62293
+olog: h_ele_EseedOP has 16542 entries of mean value 1.04849
+olog: h_ele_dEtaCl_propOut has 16705 entries of mean value 1.02407e-05
+olog: h_ele_dEtaEleCl_propOut has 16694 entries of mean value 3.94979e-06
+olog: h_ele_dEtaSc_propVtx has 16718 entries of mean value 3.29079e-05
+olog: h_ele_dPhiCl_propOut has 16484 entries of mean value 0.000228573
+olog: h_ele_dPhiEleCl_propOut has 16626 entries of mean value -8.77314e-05
+olog: h_ele_dPhiSc_propVtx has 16715 entries of mean value 6.34747e-05
+olog: h_ele_HoE has 16691 entries of mean value 0.00272164
+olog: h_ele_HoE_fiducial has 14712 entries of mean value 0.00180881
+olog: h_scl_EoEtrue_barrel has 10448 entries of mean value 0.988376
+=== olog #51 != oref
+olog: h_scl_EoEtrue_barrel_etagap has 511 entries of mean value 0.961342
+olog: h_scl_EoEtrue_barrel_phigap has 1059 entries of mean value 0.984048
+olog: h_scl_EoEtrue_ebeegap has 292 entries of mean value 0.832982
+olog: h_scl_EoEtrue_endcaps_deegap has 156 entries of mean value 0.97011
+olog: h_scl_EoEtrue_endcaps_ringgap has 42 entries of mean value 1.00827
+=== olog != oref #33
+oref: h_ele_EtaMnEtaTrue has 16722 entries of mean value -1.5817e-06
+oref: h_ele_PhiMnPhiTrue has 16522 entries of mean value -2.03651e-06
+oref: h_ele_vertexP has 16735 entries of mean value 81.2493
+oref: h_ele_vertexPt has 16735 entries of mean value 34.5826
+oref: h_ele_outerP_mode has 16733 entries of mean value 36.2366
+oref: h_ele_outerPt_mode has 16734 entries of mean value 16.6744
+oref: h_ele_vertexX has 16712 entries of mean value 0.0321519
+oref: h_ele_vertexY has 16725 entries of mean value -6.75695e-05
+oref: h_ele_vertexZ has 16736 entries of mean value 0.0163734
+oref: h_ele_EoP has 16490 entries of mean value 1.20869
+oref: h_ele_EoPout has 13475 entries of mean value 1.89476
+oref: h_ele_EeleOPout has 15309 entries of mean value 1.63054
+oref: h_ele_EseedOP has 16563 entries of mean value 1.04121
+oref: h_ele_dEtaCl_propOut has 16725 entries of mean value 2.37495e-05
+oref: h_ele_dEtaEleCl_propOut has 16720 entries of mean value -3.22117e-05
+oref: h_ele_dEtaSc_propVtx has 16736 entries of mean value 2.00575e-05
+oref: h_ele_dPhiCl_propOut has 16504 entries of mean value 0.0001578
+oref: h_ele_dPhiEleCl_propOut has 16647 entries of mean value 5.21761e-05
+oref: h_ele_dPhiSc_propVtx has 16736 entries of mean value -4.84102e-05
+oref: h_ele_HoE has 16702 entries of mean value 0.0021112
+=== olog #66 != oref #57
+olog: h_ele_seedDphi2 has 16324 entries of mean value -0.000481312
+olog: h_ele_seedDrz2 has 15259 entries of mean value 0.000767522
 ---
-oref: h_ele_vertexP has 18931 entries of mean value 80.8028
-=== olog #23 !~ oref #32 (>10%)
-olog: h_ele_PoPtrue_barrel has 10446 entries of mean value 0.99092
+oref: h_ele_PinMnPout_mode has 15585 entries of mean value 29.9189
+oref: h_ele_fbrem has 8563 entries of mean value 0.340643
+=== olog != oref #59
+oref: h_ele_seedDphi2 has 16395 entries of mean value -0.00047475
+oref: h_ele_seedDrz2 has 15291 entries of mean value 0.000622845
+=== olog #69 != oref
+olog: h_ele_PinMnPout_mode has 15552 entries of mean value 29.1695
+olog: h_ele_fbrem has 16400 entries of mean value 0.474704
+=== olog #72 != oref #63
+olog: h_ele_mva has 16567 entries of mean value 0.768375
 ---
-oref: h_ele_vertexP has 18931 entries of mean value 80.8028
-=== olog #24 !~ oref #44 (>20%)
-olog: h_ele_PoPtrue_endcaps has 6284 entries of mean value 0.982718
+oref: h_ele_charge has 16736 entries of mean value 0.000119503
+=== olog #73 != oref
+olog: h_ele_tkSumPt_dr03 has 16716 entries of mean value 0.224972
+olog: h_ele_ecalRecHitSumEt_dr03 has 12099 entries of mean value 0.600974
+olog: h_ele_hcalDepth1TowerSumEt_dr03 has 16718 entries of mean value 0.011473
+olog: h_ele_hcalDepth2TowerSumEt_dr03 has 16719 entries of mean value 0.000202358
+olog: h_ele_tkSumPt_dr04 has 16716 entries of mean value 0.226189
+olog: h_ele_ecalRecHitSumEt_dr04 has 13077 entries of mean value 0.918719
+olog: h_ele_hcalDepth1TowerSumEt_dr04 has 16718 entries of mean value 0.0162616
+olog: h_ele_hcalDepth2TowerSumEt_dr04 has 16719 entries of mean value 0.000310731
+olog: h_recEleNum has 9000 entries of mean value 1.91789
+=== olog #83 != oref
+olog: h_ele_EseedOP_all has 17036 entries of mean value 1.06098
+olog: h_ele_EoPout_all has 13666 entries of mean value 1.89973
+olog: h_ele_EeleOPout_all has 15621 entries of mean value 1.63161
+olog: h_ele_TIP_all has 17238 entries of mean value 0.0333692
+olog: h_ele_dEtaSc_propVtx_all has 17258 entries of mean value 2.98172e-05
+olog: h_ele_dPhiSc_propVtx_all has 17253 entries of mean value 3.30972e-05
+olog: h_ele_dEtaCl_propOut_all has 17241 entries of mean value 1.69985e-05
+olog: h_ele_dPhiCl_propOut_all has 16989 entries of mean value 5.42186e-05
+olog: h_ele_HoE_all has 17230 entries of mean value 0.00275913
+=== olog != oref #66
+oref: h_recEleNum has 9000 entries of mean value 1.91744
+=== olog != oref #93
+oref: h_ele_eta_showerFrac has 26423 entries of mean value 1.41819
+=== olog #22 !~ oref #22 (>10%)
+olog: h_ele_charge has 16719 entries of mean value -0.000418685
 ---
-oref: h_ele_vertexZ has 18931 entries of mean value 0.0267529
-=== olog #24 !~ oref #44 (>10%)
-olog: h_ele_PoPtrue_endcaps has 6284 entries of mean value 0.982718
+oref: h_ele_PoPtrue has 16730 entries of mean value 0.987839
+=== olog #23 !~ oref #23 (>20%)
+olog: h_ele_vertexX has 16704 entries of mean value 0.032282
 ---
-oref: h_ele_vertexZ has 18931 entries of mean value 0.0267529
-=== olog #25 !~ oref #48 (>20%)
-olog: h_scl_EoEtrue_barrel has 10449 entries of mean value 0.990007
+oref: h_ele_PoPtrue_barrel has 10446 entries of mean value 0.99092
+=== olog #23 !~ oref #23 (>10%)
+olog: h_ele_vertexX has 16704 entries of mean value 0.032282
 ---
-oref: h_ele_EoPout has 15031 entries of mean value 1.8502
-=== olog #25 !~ oref #48 (>10%)
-olog: h_scl_EoEtrue_barrel has 10449 entries of mean value 0.990007
+oref: h_ele_PoPtrue_barrel has 10446 entries of mean value 0.99092
+=== olog #24 !~ oref #24 (>20%)
+olog: h_ele_vertexY has 16704 entries of mean value -5.52771e-05
 ---
-oref: h_ele_EoPout has 15031 entries of mean value 1.8502
-=== olog #26 !~ oref #52 (>20%)
-olog: h_scl_EoEtrue_endcaps has 12550 entries of mean value 0.985219
+oref: h_ele_PoPtrue_endcaps has 6284 entries of mean value 0.982718
+=== olog #24 !~ oref #24 (>10%)
+olog: h_ele_vertexY has 16704 entries of mean value -5.52771e-05
 ---
-oref: h_ele_dEtaSc_propVtx has 18931 entries of mean value 1.83907e-05
-=== olog #26 !~ oref #52 (>10%)
-olog: h_scl_EoEtrue_endcaps has 12550 entries of mean value 0.985219
+oref: h_ele_PoPtrue_endcaps has 6284 entries of mean value 0.982718
+=== olog #25 !~ oref #25 (>20%)
+olog: h_ele_vertexZ has 16719 entries of mean value -0.0570393
 ---
-oref: h_ele_dEtaSc_propVtx has 18931 entries of mean value 1.83907e-05
-=== olog #27 !~ oref #56 (>10%)
-olog: h_scl_sigetaeta has 16736 entries of mean value 0.0122969
+oref: h_scl_EoEtrue_barrel has 10449 entries of mean value 0.990007
+=== olog #25 !~ oref #25 (>10%)
+olog: h_ele_vertexZ has 16719 entries of mean value -0.0570393
 ---
-oref: h_ele_dPhiSc_propVtx has 18931 entries of mean value -5.1576e-05
-=== olog #28 !~ oref #58 (>20%)
-olog: h_scl_sigietaieta_barrel has 10452 entries of mean value 0.00863007
+oref: h_scl_EoEtrue_barrel has 10449 entries of mean value 0.990007
+=== olog #26 !~ oref #26 (>20%)
+olog: h_ele_vertexTIP has 16707 entries of mean value 0.0059344
 ---
-oref: h_ele_HoE has 18931 entries of mean value 0.0060935
-=== olog #28 !~ oref #58 (>10%)
-olog: h_scl_sigietaieta_barrel has 10452 entries of mean value 0.00863007
+oref: h_scl_EoEtrue_endcaps has 12550 entries of mean value 0.985219
+=== olog #26 !~ oref #26 (>10%)
+olog: h_ele_vertexTIP has 16707 entries of mean value 0.0059344
+olog: h_ele_vertexP has 16719 entries of mean value 80.2991
 ---
-oref: h_ele_HoE has 18931 entries of mean value 0.0060935
-=== olog #29 !~ oref #62 (>20%)
-olog: h_scl_sigietaieta_endcaps has 6282 entries of mean value 0.024209
+oref: h_scl_EoEtrue_endcaps has 12550 entries of mean value 0.985219
+oref: h_scl_sigetaeta has 16736 entries of mean value 0.0122969
+=== olog #28 !~ oref #28 (>20%)
+olog: h_ele_vertexPt has 16719 entries of mean value 34.5119
 ---
-oref: h_ele_lostHits has 18931 entries of mean value 0.67958
-=== olog #29 !~ oref #62 (>10%)
-olog: h_scl_sigietaieta_endcaps has 6282 entries of mean value 0.024209
+oref: h_scl_sigietaieta_barrel has 10452 entries of mean value 0.00863007
+=== olog #28 !~ oref #28 (>10%)
+olog: h_ele_vertexPt has 16719 entries of mean value 34.5119
 ---
-oref: h_ele_lostHits has 18931 entries of mean value 0.67958
-=== olog #30 !~ oref #64 (>10%)
-olog: h_scl_E1x5 has 16736 entries of mean value 52.5727
-olog: h_scl_E2x5max has 16736 entries of mean value 65.6989
+oref: h_scl_sigietaieta_barrel has 10452 entries of mean value 0.00863007
+=== olog #29 !~ oref #29 (>20%)
+olog: h_ele_outerP_mode has 16716 entries of mean value 36.1345
 ---
-oref: h_ele_classes has 18931 entries of mean value 62.275
-oref: h_ele_charge has 18931 entries of mean value -0.000421019
-=== olog #32 !~ oref #67 (>20%)
-olog: h_scl_E5x5 has 16736 entries of mean value 70.9261
+oref: h_scl_sigietaieta_endcaps has 6282 entries of mean value 0.024209
+=== olog #29 !~ oref #29 (>10%)
+olog: h_ele_outerP_mode has 16716 entries of mean value 36.1345
+olog: h_ele_outerPt_mode has 16717 entries of mean value 16.8095
+olog: h_ele_outerPt_mode has 16717 entries of mean value 16.8095
+olog: h_ele_ChargeMnChargeTrue has 17239 entries of mean value 0.0599803
 ---
-oref: h_recEleNum has 10250 entries of mean value 2.40486
-=== olog #32 !~ oref #67 (>10%)
-olog: h_scl_E5x5 has 16736 entries of mean value 70.9261
+oref: h_scl_sigietaieta_endcaps has 6282 entries of mean value 0.024209
+oref: h_scl_E1x5 has 16736 entries of mean value 52.5727
+oref: h_scl_E1x5 has 16736 entries of mean value 52.5727
+oref: h_scl_E2x5max has 16736 entries of mean value 65.6989
+=== olog #33 !~ oref #33 (>20%)
+olog: h_ele_PoPtrue_barrel has 10451 entries of mean value 0.98969
 ---
-oref: h_recEleNum has 10250 entries of mean value 2.40486
-=== olog #33 !~ oref #85 (>10%)
-olog: h_ele_EtaMnEtaTrue has 16722 entries of mean value -1.5817e-06
-olog: h_ele_PhiMnPhiTrue has 16522 entries of mean value -2.03651e-06
+oref: h_ele_EtaMnEtaTrue has 16722 entries of mean value -1.5817e-06
+=== olog #33 !~ oref #33 (>10%)
+olog: h_ele_PoPtrue_barrel has 10451 entries of mean value 0.98969
 ---
-oref: h_ele_fbremvsEtamean has 16983 entries of mean value -0.000894421
-oref: h_ele_fbremvsEtamode has 16803 entries of mean value -0.000881365
-=== olog #35 !~ oref (>20%)
-olog: h_ele_vertexP has 16735 entries of mean value 81.2493
-=== olog #35 !~ oref (>10%)
-olog: h_ele_vertexP has 16735 entries of mean value 81.2493
-=== olog #36 !~ oref (>20%)
-olog: h_ele_vertexPt has 16735 entries of mean value 34.5826
-=== olog #36 !~ oref (>10%)
-olog: h_ele_vertexPt has 16735 entries of mean value 34.5826
-=== olog #37 !~ oref (>20%)
-olog: h_ele_outerP_mode has 16733 entries of mean value 36.2366
-=== olog #37 !~ oref (>10%)
-olog: h_ele_outerP_mode has 16733 entries of mean value 36.2366
-=== olog #38 !~ oref (>20%)
-olog: h_ele_outerPt_mode has 16734 entries of mean value 16.6744
-=== olog #38 !~ oref (>10%)
-olog: h_ele_outerPt_mode has 16734 entries of mean value 16.6744
-=== olog #39 !~ oref (>20%)
-olog: h_ele_vertexX has 16712 entries of mean value 0.0321519
-=== olog #39 !~ oref (>10%)
-olog: h_ele_vertexX has 16712 entries of mean value 0.0321519
-=== olog #40 !~ oref (>20%)
-olog: h_ele_vertexY has 16725 entries of mean value -6.75695e-05
-=== olog #40 !~ oref (>10%)
-olog: h_ele_vertexY has 16725 entries of mean value -6.75695e-05
-=== olog #41 !~ oref (>20%)
-olog: h_ele_vertexZ has 16736 entries of mean value 0.0163734
-=== olog #41 !~ oref (>10%)
-olog: h_ele_vertexZ has 16736 entries of mean value 0.0163734
-=== olog #42 !~ oref (>20%)
-olog: h_ele_EoP has 16490 entries of mean value 1.20869
-=== olog #42 !~ oref (>10%)
-olog: h_ele_EoP has 16490 entries of mean value 1.20869
-=== olog #43 !~ oref (>20%)
-olog: h_ele_EoPout has 13475 entries of mean value 1.89476
-=== olog #43 !~ oref (>10%)
-olog: h_ele_EoPout has 13475 entries of mean value 1.89476
-=== olog #44 !~ oref (>20%)
-olog: h_ele_EeleOPout has 15309 entries of mean value 1.63054
-=== olog #44 !~ oref (>10%)
-olog: h_ele_EeleOPout has 15309 entries of mean value 1.63054
-=== olog #45 !~ oref (>20%)
-olog: h_ele_EseedOP has 16563 entries of mean value 1.04121
-=== olog #45 !~ oref (>10%)
-olog: h_ele_EseedOP has 16563 entries of mean value 1.04121
-=== olog #46 !~ oref (>20%)
-olog: h_ele_dEtaCl_propOut has 16725 entries of mean value 2.37495e-05
-=== olog #46 !~ oref (>10%)
-olog: h_ele_dEtaCl_propOut has 16725 entries of mean value 2.37495e-05
-=== olog #47 !~ oref (>20%)
-olog: h_ele_dEtaEleCl_propOut has 16720 entries of mean value -3.22117e-05
-=== olog #47 !~ oref (>10%)
-olog: h_ele_dEtaEleCl_propOut has 16720 entries of mean value -3.22117e-05
-=== olog #48 !~ oref (>20%)
-olog: h_ele_dEtaSc_propVtx has 16736 entries of mean value 2.00575e-05
-=== olog #48 !~ oref (>10%)
-olog: h_ele_dEtaSc_propVtx has 16736 entries of mean value 2.00575e-05
-=== olog #49 !~ oref (>20%)
-olog: h_ele_dPhiCl_propOut has 16504 entries of mean value 0.0001578
-=== olog #49 !~ oref (>10%)
-olog: h_ele_dPhiCl_propOut has 16504 entries of mean value 0.0001578
-=== olog #50 !~ oref (>20%)
-olog: h_ele_dPhiEleCl_propOut has 16647 entries of mean value 5.21761e-05
-=== olog #50 !~ oref (>10%)
-olog: h_ele_dPhiEleCl_propOut has 16647 entries of mean value 5.21761e-05
-=== olog #51 !~ oref (>20%)
-olog: h_ele_dPhiSc_propVtx has 16736 entries of mean value -4.84102e-05
-=== olog #51 !~ oref (>10%)
-olog: h_ele_dPhiSc_propVtx has 16736 entries of mean value -4.84102e-05
-=== olog #52 !~ oref (>20%)
-olog: h_ele_HoE has 16702 entries of mean value 0.0021112
-=== olog #52 !~ oref (>10%)
-olog: h_ele_HoE has 16702 entries of mean value 0.0021112
-=== olog #53 !~ oref (>20%)
-olog: h_ele_chi2 has 16539 entries of mean value 1.30957
-=== olog #53 !~ oref (>10%)
-olog: h_ele_chi2 has 16539 entries of mean value 1.30957
-=== olog #54 !~ oref (>20%)
-olog: h_ele_foundHits has 14303 entries of mean value 15.7326
-=== olog #54 !~ oref (>10%)
-olog: h_ele_foundHits has 14303 entries of mean value 15.7326
-=== olog #55 !~ oref (>20%)
-olog: h_ele_lostHits has 16736 entries of mean value 0.116874
-=== olog #55 !~ oref (>10%)
-olog: h_ele_lostHits has 16736 entries of mean value 0.116874
-=== olog #56 !~ oref (>20%)
-olog: h_ele_ambiguousTracks has 16734 entries of mean value 0.0580853
-=== olog #56 !~ oref (>10%)
-olog: h_ele_ambiguousTracks has 16734 entries of mean value 0.0580853
-=== olog #57 !~ oref (>20%)
-olog: h_ele_PinMnPout_mode has 15585 entries of mean value 29.9189
-=== olog #57 !~ oref (>10%)
-olog: h_ele_PinMnPout_mode has 15585 entries of mean value 29.9189
-=== olog #58 !~ oref (>20%)
-olog: h_ele_fbrem has 8563 entries of mean value 0.340643
-=== olog #58 !~ oref (>10%)
-olog: h_ele_fbrem has 8563 entries of mean value 0.340643
-=== olog #59 !~ oref (>20%)
-olog: h_ele_seedDphi2 has 16395 entries of mean value -0.00047475
-=== olog #59 !~ oref (>10%)
-olog: h_ele_seedDphi2 has 16395 entries of mean value -0.00047475
-=== olog #60 !~ oref (>20%)
-olog: h_ele_seedDrz2 has 15291 entries of mean value 0.000622845
-=== olog #60 !~ oref (>10%)
-olog: h_ele_seedDrz2 has 15291 entries of mean value 0.000622845
-=== olog #61 !~ oref (>20%)
-olog: h_ele_seedSubdet2 has 16736 entries of mean value 1.22425
-=== olog #61 !~ oref (>10%)
-olog: h_ele_seedSubdet2 has 16736 entries of mean value 1.22425
-=== olog #62 !~ oref (>20%)
-olog: h_ele_classes has 16736 entries of mean value 6.17412
-=== olog #62 !~ oref (>10%)
-olog: h_ele_classes has 16736 entries of mean value 6.17412
-=== olog #63 !~ oref (>20%)
-olog: h_ele_charge has 16736 entries of mean value 0.000119503
-=== olog #63 !~ oref (>10%)
-olog: h_ele_charge has 16736 entries of mean value 0.000119503
-=== olog #64 !~ oref (>20%)
-olog: h_ele_EoverP_all has 16955 entries of mean value 1.21996
-=== olog #64 !~ oref (>10%)
-olog: h_ele_EoverP_all has 16955 entries of mean value 1.21996
-=== olog #65 !~ oref (>20%)
-olog: h_ele_mee_all has 5015 entries of mean value 94.8757
-=== olog #65 !~ oref (>10%)
-olog: h_ele_mee_all has 5015 entries of mean value 94.8757
-=== olog #66 !~ oref (>20%)
-olog: h_recEleNum has 9000 entries of mean value 1.91744
-=== olog #66 !~ oref (>10%)
-olog: h_recEleNum has 9000 entries of mean value 1.91744
-=== olog #67 !~ oref (>20%)
-olog: h_ele_absetaEff has 255520 entries of mean value 1.21624
-=== olog #67 !~ oref (>10%)
-olog: h_ele_absetaEff has 255520 entries of mean value 1.21624
-=== olog #68 !~ oref (>20%)
-olog: h_ele_etaEff has 255848 entries of mean value 0.00405671
-=== olog #68 !~ oref (>10%)
-olog: h_ele_etaEff has 255848 entries of mean value 0.00405671
-=== olog #69 !~ oref (>20%)
-olog: h_ele_ptEff has 238368 entries of mean value 35.0038
-=== olog #69 !~ oref (>10%)
-olog: h_ele_ptEff has 238368 entries of mean value 35.0038
-=== olog #70 !~ oref (>20%)
-olog: h_ele_phiEff has 233891 entries of mean value -0.000603959
-=== olog #70 !~ oref (>10%)
-olog: h_ele_phiEff has 233891 entries of mean value -0.000603959
-=== olog #72 !~ oref (>20%)
-olog: h_ele_etaEff_all has 445699 entries of mean value 0.00179311
-=== olog #72 !~ oref (>10%)
-olog: h_ele_etaEff_all has 445699 entries of mean value 0.00179311
-=== olog #73 !~ oref (>20%)
-olog: h_ele_ptEff_all has 258120 entries of mean value 34.8734
-=== olog #73 !~ oref (>10%)
-olog: h_ele_ptEff_all has 258120 entries of mean value 34.8734
+oref: h_ele_EtaMnEtaTrue has 16722 entries of mean value -1.5817e-06
+=== olog #34 !~ oref #34 (>20%)
+olog: h_ele_PoPtrue_endcaps has 6266 entries of mean value 0.979573
+---
+oref: h_ele_PhiMnPhiTrue has 16522 entries of mean value -2.03651e-06
+=== olog #34 !~ oref #34 (>10%)
+olog: h_ele_PoPtrue_endcaps has 6266 entries of mean value 0.979573
+olog: h_ele_EtaMnEtaTrue has 16698 entries of mean value 1.75676e-06
+olog: h_ele_EtaMnEtaTrue has 16698 entries of mean value 1.75676e-06
+olog: h_ele_PhiMnPhiTrue has 16482 entries of mean value 8.08181e-06
+olog: h_ele_PhiMnPhiTrue has 16482 entries of mean value 8.08181e-06
+olog: h_ele_EoP has 16436 entries of mean value 1.2052
+olog: h_ele_EoP has 16436 entries of mean value 1.2052
+olog: h_ele_EoPout has 13421 entries of mean value 1.88322
+olog: h_ele_EoPout has 13421 entries of mean value 1.88322
+---
+oref: h_ele_PhiMnPhiTrue has 16522 entries of mean value -2.03651e-06
+oref: h_ele_vertexP has 16735 entries of mean value 81.2493
+oref: h_ele_vertexP has 16735 entries of mean value 81.2493
+oref: h_ele_vertexPt has 16735 entries of mean value 34.5826
+oref: h_ele_vertexPt has 16735 entries of mean value 34.5826
+oref: h_ele_outerP_mode has 16733 entries of mean value 36.2366
+oref: h_ele_outerP_mode has 16733 entries of mean value 36.2366
+oref: h_ele_outerPt_mode has 16734 entries of mean value 16.6744
+oref: h_ele_outerPt_mode has 16734 entries of mean value 16.6744
+=== olog #43 !~ oref #43 (>20%)
+olog: h_ele_dEtaSc_propVtx has 16718 entries of mean value 3.29079e-05
+---
+oref: h_ele_EoPout has 13475 entries of mean value 1.89476
+=== olog #43 !~ oref #43 (>10%)
+olog: h_ele_dEtaSc_propVtx has 16718 entries of mean value 3.29079e-05
+olog: h_ele_dPhiCl_propOut has 16484 entries of mean value 0.000228573
+olog: h_ele_dPhiCl_propOut has 16484 entries of mean value 0.000228573
+olog: h_ele_dPhiEleCl_propOut has 16626 entries of mean value -8.77314e-05
+olog: h_ele_dPhiEleCl_propOut has 16626 entries of mean value -8.77314e-05
+olog: h_ele_dPhiSc_propVtx has 16715 entries of mean value 6.34747e-05
+---
+oref: h_ele_EoPout has 13475 entries of mean value 1.89476
+oref: h_ele_EeleOPout has 15309 entries of mean value 1.63054
+oref: h_ele_EeleOPout has 15309 entries of mean value 1.63054
+oref: h_ele_EseedOP has 16563 entries of mean value 1.04121
+oref: h_ele_EseedOP has 16563 entries of mean value 1.04121
+oref: h_ele_dEtaCl_propOut has 16725 entries of mean value 2.37495e-05
+=== olog #49 !~ oref #49 (>20%)
+olog: h_scl_EoEtrue_barrel has 10448 entries of mean value 0.988376
+---
+oref: h_ele_dPhiCl_propOut has 16504 entries of mean value 0.0001578
+=== olog #49 !~ oref #49 (>10%)
+olog: h_scl_EoEtrue_barrel has 10448 entries of mean value 0.988376
+---
+oref: h_ele_dPhiCl_propOut has 16504 entries of mean value 0.0001578
+=== olog #50 !~ oref #50 (>20%)
+olog: h_scl_EoEtrue_endcaps has 12496 entries of mean value 0.983309
+---
+oref: h_ele_dPhiEleCl_propOut has 16647 entries of mean value 5.21761e-05
+=== olog #50 !~ oref #50 (>10%)
+olog: h_scl_EoEtrue_endcaps has 12496 entries of mean value 0.983309
+---
+oref: h_ele_dPhiEleCl_propOut has 16647 entries of mean value 5.21761e-05
+=== olog #51 !~ oref #51 (>20%)
+olog: h_scl_EoEtrue_barrel_etagap has 511 entries of mean value 0.961342
+---
+oref: h_ele_dPhiSc_propVtx has 16736 entries of mean value -4.84102e-05
+=== olog #51 !~ oref #51 (>10%)
+olog: h_scl_EoEtrue_barrel_etagap has 511 entries of mean value 0.961342
+---
+oref: h_ele_dPhiSc_propVtx has 16736 entries of mean value -4.84102e-05
+=== olog #52 !~ oref #52 (>20%)
+olog: h_scl_EoEtrue_barrel_phigap has 1059 entries of mean value 0.984048
+---
+oref: h_ele_HoE has 16702 entries of mean value 0.0021112
+=== olog #52 !~ oref #52 (>10%)
+olog: h_scl_EoEtrue_barrel_phigap has 1059 entries of mean value 0.984048
+---
+oref: h_ele_HoE has 16702 entries of mean value 0.0021112
+=== olog #53 !~ oref #53 (>20%)
+olog: h_scl_EoEtrue_ebeegap has 292 entries of mean value 0.832982
+---
+oref: h_ele_chi2 has 16539 entries of mean value 1.30957
+=== olog #53 !~ oref #53 (>10%)
+olog: h_scl_EoEtrue_ebeegap has 292 entries of mean value 0.832982
+---
+oref: h_ele_chi2 has 16539 entries of mean value 1.30957
+=== olog #54 !~ oref #54 (>20%)
+olog: h_scl_EoEtrue_endcaps_deegap has 156 entries of mean value 0.97011
+---
+oref: h_ele_foundHits has 14303 entries of mean value 15.7326
+=== olog #54 !~ oref #54 (>10%)
+olog: h_scl_EoEtrue_endcaps_deegap has 156 entries of mean value 0.97011
+---
+oref: h_ele_foundHits has 14303 entries of mean value 15.7326
+=== olog #55 !~ oref #55 (>20%)
+olog: h_scl_EoEtrue_endcaps_ringgap has 42 entries of mean value 1.00827
+---
+oref: h_ele_lostHits has 16736 entries of mean value 0.116874
+=== olog #55 !~ oref #55 (>10%)
+olog: h_scl_EoEtrue_endcaps_ringgap has 42 entries of mean value 1.00827
+olog: h_scl_sigetaeta has 16719 entries of mean value 0.0122701
+---
+oref: h_ele_lostHits has 16736 entries of mean value 0.116874
+oref: h_ele_ambiguousTracks has 16734 entries of mean value 0.0580853
+=== olog #57 !~ oref #57 (>20%)
+olog: h_scl_sigietaieta_barrel has 10453 entries of mean value 0.00866521
+---
+oref: h_ele_PinMnPout_mode has 15585 entries of mean value 29.9189
+=== olog #57 !~ oref #57 (>10%)
+olog: h_scl_sigietaieta_barrel has 10453 entries of mean value 0.00866521
+---
+oref: h_ele_PinMnPout_mode has 15585 entries of mean value 29.9189
+=== olog #58 !~ oref #58 (>20%)
+olog: h_scl_sigietaieta_endcaps has 6264 entries of mean value 0.024249
+---
+oref: h_ele_fbrem has 8563 entries of mean value 0.340643
+=== olog #58 !~ oref #58 (>10%)
+olog: h_scl_sigietaieta_endcaps has 6264 entries of mean value 0.024249
+olog: h_scl_E1x5 has 16719 entries of mean value 52.0254
+olog: h_scl_E1x5 has 16719 entries of mean value 52.0254
+olog: h_scl_E2x5max has 16719 entries of mean value 64.9854
+olog: h_scl_E2x5max has 16719 entries of mean value 64.9854
+olog: h_scl_E5x5 has 16719 entries of mean value 70.1726
+olog: h_scl_E5x5 has 16719 entries of mean value 70.1726
+---
+oref: h_ele_fbrem has 8563 entries of mean value 0.340643
+oref: h_ele_seedDphi2 has 16395 entries of mean value -0.00047475
+oref: h_ele_seedDphi2 has 16395 entries of mean value -0.00047475
+oref: h_ele_seedDrz2 has 15291 entries of mean value 0.000622845
+oref: h_ele_seedDrz2 has 15291 entries of mean value 0.000622845
+oref: h_ele_seedSubdet2 has 16736 entries of mean value 1.22425
+oref: h_ele_seedSubdet2 has 16736 entries of mean value 1.22425
+=== olog #65 !~ oref #65 (>20%)
+olog: h_ele_ambiguousTracks has 16718 entries of mean value 0.0576026
+---
+oref: h_ele_mee_all has 5015 entries of mean value 94.8757
+=== olog #65 !~ oref #65 (>10%)
+olog: h_ele_ambiguousTracks has 16718 entries of mean value 0.0576026
+---
+oref: h_ele_mee_all has 5015 entries of mean value 94.8757
+=== olog #66 !~ oref #66 (>20%)
+olog: h_ele_seedDphi2 has 16324 entries of mean value -0.000481312
+---
+oref: h_recEleNum has 9000 entries of mean value 1.91744
+=== olog #66 !~ oref #66 (>10%)
+olog: h_ele_seedDphi2 has 16324 entries of mean value -0.000481312
+---
+oref: h_recEleNum has 9000 entries of mean value 1.91744
+=== olog #67 !~ oref #67 (>20%)
+olog: h_ele_seedDrz2 has 15259 entries of mean value 0.000767522
+---
+oref: h_ele_absetaEff has 255520 entries of mean value 1.21624
+=== olog #67 !~ oref #67 (>10%)
+olog: h_ele_seedDrz2 has 15259 entries of mean value 0.000767522
+---
+oref: h_ele_absetaEff has 255520 entries of mean value 1.21624
+=== olog #68 !~ oref #68 (>20%)
+olog: h_ele_seedSubdet2 has 16719 entries of mean value 1.22304
+---
+oref: h_ele_etaEff has 255848 entries of mean value 0.00405671
+=== olog #68 !~ oref #68 (>10%)
+olog: h_ele_seedSubdet2 has 16719 entries of mean value 1.22304
+---
+oref: h_ele_etaEff has 255848 entries of mean value 0.00405671
+=== olog #69 !~ oref #69 (>20%)
+olog: h_ele_PinMnPout_mode has 15552 entries of mean value 29.1695
+---
+oref: h_ele_ptEff has 238368 entries of mean value 35.0038
+=== olog #69 !~ oref #69 (>10%)
+olog: h_ele_PinMnPout_mode has 15552 entries of mean value 29.1695
+---
+oref: h_ele_ptEff has 238368 entries of mean value 35.0038
+=== olog #70 !~ oref #70 (>20%)
+olog: h_ele_fbrem has 16400 entries of mean value 0.474704
+---
+oref: h_ele_phiEff has 233891 entries of mean value -0.000603959
+=== olog #70 !~ oref #70 (>10%)
+olog: h_ele_fbrem has 16400 entries of mean value 0.474704
+---
+oref: h_ele_phiEff has 233891 entries of mean value -0.000603959
+=== olog #71 !~ oref #72 (>20%)
+olog: h_ele_classes has 16719 entries of mean value 6.13308
+---
+oref: h_ele_etaEff_all has 445699 entries of mean value 0.00179311
+=== olog #71 !~ oref #72 (>10%)
+olog: h_ele_classes has 16719 entries of mean value 6.13308
+---
+oref: h_ele_etaEff_all has 445699 entries of mean value 0.00179311
+=== olog #72 !~ oref #73 (>20%)
+olog: h_ele_mva has 16567 entries of mean value 0.768375
+---
+oref: h_ele_ptEff_all has 258120 entries of mean value 34.8734
+=== olog #72 !~ oref #73 (>10%)
+olog: h_ele_mva has 16567 entries of mean value 0.768375
+---
+oref: h_ele_ptEff_all has 258120 entries of mean value 34.8734
+=== olog #73 !~ oref #88 (>10%)
+olog: h_ele_tkSumPt_dr03 has 16716 entries of mean value 0.224972
+---
+oref: h_ele_fbremvsEtamean has 16596 entries of mean value 0.00271784
+=== olog #74 !~ oref #89 (>20%)
+olog: h_ele_ecalRecHitSumEt_dr03 has 12099 entries of mean value 0.600974
+---
+oref: h_ele_fbremvsEtamode has 8561 entries of mean value 0.0108149
+=== olog #74 !~ oref #89 (>10%)
+olog: h_ele_ecalRecHitSumEt_dr03 has 12099 entries of mean value 0.600974
+---
+oref: h_ele_fbremvsEtamode has 8561 entries of mean value 0.0108149
+=== olog #75 !~ oref #93 (>20%)
+olog: h_ele_hcalDepth1TowerSumEt_dr03 has 16718 entries of mean value 0.011473
+---
+oref: h_ele_eta_showerFrac has 26423 entries of mean value 1.41819
+=== olog #75 !~ oref #93 (>10%)
+olog: h_ele_hcalDepth1TowerSumEt_dr03 has 16718 entries of mean value 0.011473
+---
+oref: h_ele_eta_showerFrac has 26423 entries of mean value 1.41819
+=== olog #76 !~ oref (>20%)
+olog: h_ele_hcalDepth2TowerSumEt_dr03 has 16719 entries of mean value 0.000202358
+=== olog #76 !~ oref (>10%)
+olog: h_ele_hcalDepth2TowerSumEt_dr03 has 16719 entries of mean value 0.000202358
+=== olog #77 !~ oref (>20%)
+olog: h_ele_tkSumPt_dr04 has 16716 entries of mean value 0.226189
+=== olog #77 !~ oref (>10%)
+olog: h_ele_tkSumPt_dr04 has 16716 entries of mean value 0.226189
+=== olog #78 !~ oref (>20%)
+olog: h_ele_ecalRecHitSumEt_dr04 has 13077 entries of mean value 0.918719
+=== olog #78 !~ oref (>10%)
+olog: h_ele_ecalRecHitSumEt_dr04 has 13077 entries of mean value 0.918719
+=== olog #79 !~ oref (>20%)
+olog: h_ele_hcalDepth1TowerSumEt_dr04 has 16718 entries of mean value 0.0162616
+=== olog #79 !~ oref (>10%)
+olog: h_ele_hcalDepth1TowerSumEt_dr04 has 16718 entries of mean value 0.0162616
+=== olog #80 !~ oref (>20%)
+olog: h_ele_hcalDepth2TowerSumEt_dr04 has 16719 entries of mean value 0.000310731
+=== olog #80 !~ oref (>10%)
+olog: h_ele_hcalDepth2TowerSumEt_dr04 has 16719 entries of mean value 0.000310731
+=== olog #81 !~ oref (>20%)
+olog: h_recEleNum has 9000 entries of mean value 1.91789
+=== olog #81 !~ oref (>10%)
+olog: h_recEleNum has 9000 entries of mean value 1.91789
+=== olog #82 !~ oref (>20%)
+olog: h_ele_EoverP_all has 16914 entries of mean value 1.21921
+=== olog #82 !~ oref (>10%)
+olog: h_ele_EoverP_all has 16914 entries of mean value 1.21921
+=== olog #83 !~ oref (>20%)
+olog: h_ele_EseedOP_all has 17036 entries of mean value 1.06098
+=== olog #83 !~ oref (>10%)
+olog: h_ele_EseedOP_all has 17036 entries of mean value 1.06098
+=== olog #84 !~ oref (>20%)
+olog: h_ele_EoPout_all has 13666 entries of mean value 1.89973
+=== olog #84 !~ oref (>10%)
+olog: h_ele_EoPout_all has 13666 entries of mean value 1.89973
+=== olog #85 !~ oref (>20%)
+olog: h_ele_EeleOPout_all has 15621 entries of mean value 1.63161
+=== olog #85 !~ oref (>10%)
+olog: h_ele_EeleOPout_all has 15621 entries of mean value 1.63161
+=== olog #86 !~ oref (>20%)
+olog: h_ele_TIP_all has 17238 entries of mean value 0.0333692
+=== olog #86 !~ oref (>10%)
+olog: h_ele_TIP_all has 17238 entries of mean value 0.0333692
+=== olog #87 !~ oref (>20%)
+olog: h_ele_dEtaSc_propVtx_all has 17258 entries of mean value 2.98172e-05
+=== olog #87 !~ oref (>10%)
+olog: h_ele_dEtaSc_propVtx_all has 17258 entries of mean value 2.98172e-05
 === olog #88 !~ oref (>20%)
-olog: h_ele_fbremvsEtamean has 16596 entries of mean value 0.00271784
+olog: h_ele_dPhiSc_propVtx_all has 17253 entries of mean value 3.30972e-05
 === olog #88 !~ oref (>10%)
-olog: h_ele_fbremvsEtamean has 16596 entries of mean value 0.00271784
+olog: h_ele_dPhiSc_propVtx_all has 17253 entries of mean value 3.30972e-05
 === olog #89 !~ oref (>20%)
-olog: h_ele_fbremvsEtamode has 8561 entries of mean value 0.0108149
+olog: h_ele_dEtaCl_propOut_all has 17241 entries of mean value 1.69985e-05
 === olog #89 !~ oref (>10%)
-olog: h_ele_fbremvsEtamode has 8561 entries of mean value 0.0108149
+olog: h_ele_dEtaCl_propOut_all has 17241 entries of mean value 1.69985e-05
+=== olog #90 !~ oref (>20%)
+olog: h_ele_dPhiCl_propOut_all has 16989 entries of mean value 5.42186e-05
+=== olog #90 !~ oref (>10%)
+olog: h_ele_dPhiCl_propOut_all has 16989 entries of mean value 5.42186e-05
+=== olog #91 !~ oref (>20%)
+olog: h_ele_HoE_all has 17230 entries of mean value 0.00275913
+=== olog #91 !~ oref (>10%)
+olog: h_ele_HoE_all has 17230 entries of mean value 0.00275913
+=== olog #92 !~ oref (>20%)
+olog: h_ele_mee_all has 5056 entries of mean value 94.1337
+=== olog #92 !~ oref (>10%)
+olog: h_ele_mee_all has 5056 entries of mean value 94.1337
 === olog #93 !~ oref (>20%)
-olog: h_ele_eta_showerFrac has 26423 entries of mean value 1.41819
+olog: h_ele_absetaEff has 246557 entries of mean value 1.21531
 === olog #93 !~ oref (>10%)
-olog: h_ele_eta_showerFrac has 26423 entries of mean value 1.41819
+olog: h_ele_absetaEff has 246557 entries of mean value 1.21531
+=== olog #94 !~ oref (>20%)
+olog: h_ele_etaEff has 246814 entries of mean value 0.000576643
+=== olog #94 !~ oref (>10%)
+olog: h_ele_etaEff has 246814 entries of mean value 0.000576643
+=== olog #95 !~ oref (>20%)
+olog: h_ele_ptEff has 234573 entries of mean value 34.9922
+=== olog #95 !~ oref (>10%)
+olog: h_ele_ptEff has 234573 entries of mean value 34.9922
+=== olog #96 !~ oref (>20%)
+olog: h_ele_phiEff has 228320 entries of mean value 0.00182368
+=== olog #96 !~ oref (>10%)
+olog: h_ele_phiEff has 228320 entries of mean value 0.00182368
+=== olog #98 !~ oref (>20%)
+olog: h_ele_etaEff_all has 440938 entries of mean value 0.00151128
+=== olog #98 !~ oref (>10%)
+olog: h_ele_etaEff_all has 440938 entries of mean value 0.00151128
+=== olog #99 !~ oref (>20%)
+olog: h_ele_ptEff_all has 234756 entries of mean value 34.9101
+=== olog #99 !~ oref (>10%)
+olog: h_ele_ptEff_all has 234756 entries of mean value 34.9101
+=== olog #120 !~ oref (>20%)
+olog: h_ele_fbremvsEtamean has 16594 entries of mean value 0.000335966
+=== olog #120 !~ oref (>10%)
+olog: h_ele_fbremvsEtamean has 16594 entries of mean value 0.000335966
+=== olog #121 !~ oref (>20%)
+olog: h_ele_fbremvsEtamode has 16400 entries of mean value -0.000132769
+=== olog #121 !~ oref (>10%)
+olog: h_ele_fbremvsEtamode has 16400 entries of mean value -0.000132769
 
 [oval diff] =========================================
 [oval diff] result: DIFFS

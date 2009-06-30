@@ -1,0 +1,22 @@
+
+[oval run] =================================================
+[oval run] USER : chamont
+[oval run] HOST : lxcmsf2.cern.ch
+[oval run] TEST_OUTPUT_FILE = gsfElectronHistos.root
+[oval run] DBS_RELEASE = CMSSW_3_1_0_pre11
+[oval run] DBS_LIKE = *MC_31X_V1-v1*-RECO
+[oval run] VAL_NEW_RELEASE = 310pre11
+[oval run] VAL_REF_RELEASE = 310pre10
+[oval run] DBS_SAMPLE = RelValSingleElectronFlatPt5To100
+[oval run] VAL_ANALYZER = GsfElectronMCAnalyzer
+[oval run] run tool: scram
+[oval run] final instruction: ./dbs_discovery.py
+[oval run] =================================================
+
+/store/relval/CMSSW_3_1_0_pre11/RelValSingleElectronFlatPt5To100/GEN-SIM-RECO/MC_31X_V1-v1/0001/5ABF2130-F064-DE11-9501-003048767ECF.root
+/store/relval/CMSSW_3_1_0_pre11/RelValSingleElectronFlatPt5To100/GEN-SIM-RECO/MC_31X_V1-v1/0000/C2A8C4D1-BE64-DE11-9769-001A92971B8E.root
+
+[oval run] ==========================================
+[oval run] result: OK
+[oval run] ==========================================
+
