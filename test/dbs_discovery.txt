@@ -1,7 +1,7 @@
 
-RelValSingleElectronPt10-RECO.root
-RelValSingleElectronPt35-RECO.root
-RelValTTbar-RECO.root
-RelValZEE-RECO.root
-RelValZEE-STARTUP-RECO.root
-RelValQCD_Pt_80_120-RECO.root
+/tmp/RelValSingleElectronPt10-RECO.root
+/tmp/RelValSingleElectronPt35-RECO.root
+/tmp/RelValTTbar-RECO.root
+/tmp/RelValZEE-MC-RECO.root
+/tmp/RelValZEE-STARTUP-RECO.root
+/tmp/RelValQCD_Pt_80_120-RECO.root
