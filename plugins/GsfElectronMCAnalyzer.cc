@@ -13,7 +13,7 @@
 //
 // Original Author:  Ursula Berthon
 //         Created:  Mon Mar 27 13:22:06 CEST 2006
-// $Id: GsfElectronMCAnalyzer.cc,v 1.41 2009/09/20 10:06:48 charlot Exp $
+// $Id: GsfElectronMCAnalyzer.cc,v 1.42 2009/10/06 09:42:06 chamont Exp $
 //
 //
 
@@ -1857,8 +1857,9 @@ GsfElectronMCAnalyzer::analyze(const edm::Event& iEvent, const edm::EventSetup& 
 	  double mc_charge = mcIter->pdgId() == 11 ? -1. : 1. ;
 	  h_ele_ChargeMnChargeTrue  -> Fill( fabs(gsfIter->charge()-mc_charge));
 	  // require here a charge mismatch
-	  if ( (mcIter->pdgId() == 11) && (gsfIter->charge() > 0.) || (mcIter->pdgId() == -11) &&
-	  (gsfIter->charge() < 0.) ){
+	  if ( ( (mcIter->pdgId() == 11) && (gsfIter->charge() > 0.) ) ||
+	       ( (mcIter->pdgId() == -11) && (gsfIter->charge() < 0.) ) )
+	   {
 	    double tmpGsfRatio = gsfIter->p()/mcIter->p();
 	    if ( fabs(tmpGsfRatio-1) < fabs(gsfOkRatio-1) ) {
 	      gsfOkRatio = tmpGsfRatio;
@@ -1940,8 +1941,9 @@ GsfElectronMCAnalyzer::analyze(const edm::Event& iEvent, const edm::EventSetup& 
          dphi = dphi < 0? (CLHEP::twopi) + dphi : dphi - CLHEP::twopi;
     	double deltaR = sqrt(pow((gsfIter->eta()-mcIter->eta()),2) + pow(dphi,2));
 	if ( deltaR < deltaR_ ){
-	  if ( (mcIter->pdgId() == 11) && (gsfIter->charge() < 0.) || (mcIter->pdgId() == -11) &&
-	  (gsfIter->charge() > 0.) ){
+	  if ( ( (mcIter->pdgId() == 11) && (gsfIter->charge() < 0.) ) ||
+	       ( (mcIter->pdgId() == -11) && (gsfIter->charge() > 0.) ) )
+	   {
 	    double tmpGsfRatio = gsfIter->p()/mcIter->p();
 	    if ( fabs(tmpGsfRatio-1) < fabs(gsfOkRatio-1) ) {
 	      gsfOkRatio = tmpGsfRatio;
