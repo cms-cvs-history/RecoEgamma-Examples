@@ -1,4 +1,3 @@
-
 // -*- C++ -*-
 //
 // Package:    RecoEgamma/Examples
@@ -26,6 +25,7 @@
 #include "FWCore/Framework/interface/Event.h"
 #include "FWCore/Framework/interface/MakerMacros.h"
 #include "FWCore/MessageLogger/interface/MessageLogger.h"
+#include "FWCore/Common/interface/TriggerNames.h"
 
 #include "DataFormats/GsfTrackReco/interface/GsfTrack.h"
 #include "DataFormats/EgammaCandidates/interface/GsfElectron.h"
@@ -1343,7 +1343,7 @@ GsfElectronDataAnalyzer::analyze(const edm::Event& iEvent, const edm::EventSetup
 	    if (gsfIter->charge()*gsfIter2->charge()<0.) {
 	      h_ele_mee_os -> Fill(sqrt(mee2));
 	      if (gsfIter->isEB() && gsfIter2->isEB()) h_ele_mee_os_ebeb -> Fill(sqrt(mee2));
-	      if ((gsfIter->isEB() && gsfIter2->isEE()) || (gsfIter->isEE() && gsfIter2->isEB())) h_ele_mee_os_ebee -> Fill(sqrt(mee2));	
+	      if (gsfIter->isEB() && gsfIter2->isEE()) h_ele_mee_os_ebee -> Fill(sqrt(mee2));
 	      if (gsfIter->isEE() && gsfIter2->isEE()) h_ele_mee_os_eeee -> Fill(sqrt(mee2));
 	      if ((gsfIter->classification()==GsfElectron::GOLDEN && gsfIter2->classification()==GsfElectron::GOLDEN) ||
 		 (gsfIter->classification()==GsfElectron::GOLDEN && gsfIter2->classification()==GsfElectron::BIGBREM) ||
@@ -1481,16 +1481,16 @@ bool GsfElectronDataAnalyzer::trigger(const edm::Event & e)
     //std::cout << "TriggerResults found, number of HLT paths: " << triggerResults->size() << std::endl;
 
     // get trigger names
-    triggerNames_.init(*triggerResults);
+    const edm::TriggerNames & triggerNames = e.triggerNames(*triggerResults);
     if (nEvents_==1) {
-      for (unsigned int i=0; i<triggerNames_.size(); i++) {
-	std::cout << "trigger path= " << triggerNames_.triggerName(i) << std::endl;
+      for (unsigned int i=0; i<triggerNames.size(); i++) {
+	std::cout << "trigger path= " << triggerNames.triggerName(i) << std::endl;
       }
     }
 
     unsigned int n = HLTPathsByName_.size();
     for (unsigned int i=0; i!=n; i++) {
-      HLTPathsByIndex_[i]=triggerNames_.triggerIndex(HLTPathsByName_[i]);
+      HLTPathsByIndex_[i]=triggerNames.triggerIndex(HLTPathsByName_[i]);
     }
 
     // empty input vectors (n==0) means any trigger paths
@@ -1499,7 +1499,7 @@ bool GsfElectronDataAnalyzer::trigger(const edm::Event & e)
       HLTPathsByName_.resize(n);
       HLTPathsByIndex_.resize(n);
       for (unsigned int i=0; i!=n; i++) {
-	HLTPathsByName_[i]=triggerNames_.triggerName(i);
+	HLTPathsByName_[i]=triggerNames.triggerName(i);
 	HLTPathsByIndex_[i]=i;
       }
     }
